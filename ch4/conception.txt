@@ -1,0 +1,19 @@
+CRUD: Create, Read, Update, Delete - 데이터 처리의 기본 덕목
+    ex) Instagram 게시물 생성, 확인, 수정, 삭제 가능
+
+어떠한 대상을 저장하고, 저장한 대상을 가공하는 행동
+-> DATABASE가 기본
+
+백엔드 개발: 데이터베이스와의 상호작용이 중요(Django <-> DB)
+
+DataBase: 데이터를 저장하는 통
+DBMS: 데이터베이스 관리 시스템 ex) MySQL, ORACLE, SQL Server...
+    - RDBMS: 관계형 데이터베이스(데이터를 표처럼 활용) cf) 대부분의 DBMS는 RDBMS임
+        - Primary Key(기본키): table의 정체성을 나타낼 수 있는 Field. 반드시 존재해야 함
+        - Foreign key(외래키): table간 관계성을 나타낼 수 있는 Field. 다른 테이블에 접근 가능 - 참조무결성
+
+ORM: Objection Relational Mapping - 객체를 이용한 테이블 매핑
+    - models.py 안에 class로 table 표현(객체로써 테이블 생성)
+    - Migration: Django에 DB 반영
+        - python manage.py migrate: 초기화, 변경사항 반영
+        - python manage.py makemigrations: 수정한 migration 파일 생성
