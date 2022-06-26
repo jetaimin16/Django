@@ -1,0 +1,10 @@
+{% for o in obj %}
+{{ o.original_title }} <br/>
+<img src = "https://image.tmdb.org/t/p/w500/{{ o.poster_path }}"><br/>
+<img src = "https://image.tmdb.org/t/p/w500/{{ o.backdrop_path }}"><br/>
+{{ o.vote_everage }}<br/>
+{{ o.overview }}<br/>
+{{ o.title }}<br/>
+{{ o.id }}<br/>
+
+{% endfor %}
